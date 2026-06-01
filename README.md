@@ -48,6 +48,7 @@ autogate/
 │   ├── config.py           # Constantes et seuils (ratio, aire, seuil OCR…)
 │   ├── detection.py        # Pipeline OpenCV : détection + extraction de la plaque
 │   ├── ocr.py              # OCR Tesseract + nettoyage du texte
+│   ├── pipeline.py         # Orchestration détection → OCR → décision
 │   └── database.py         # Couche SQLite (plaques autorisées + journal)
 ├── data/
 │   └── images/             # Images de test (photos de véhicules)
