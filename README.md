@@ -53,6 +53,7 @@ autogate/
 ├── data/
 │   └── images/             # Images de test (photos de véhicules)
 ├── db/                     # Base de données SQLite générée à l'exécution
+├── scripts/                # Scripts utilitaires (debug, génération d'images test, ajout de plaques)
 ├── tests/
 │   └── test_detection.py   # Tests unitaires du pipeline
 └── docs/
@@ -78,7 +79,9 @@ pip install -r requirements.txt
 # 4. Moteur Tesseract (requis par pytesseract)
 #   Ubuntu/Debian : sudo apt install tesseract-ocr
 #   macOS         : brew install tesseract
-#   Windows       : installeur UB-Mannheim
+#   Windows       : Via winget (recommandé) :
+#                   winget install tesseract-ocr.tesseract --accept-source-agreements --accept-package-agreements
+#                   (ou via installeur classique UB-Mannheim)
 ```
 
 ---

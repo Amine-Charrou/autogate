@@ -11,6 +11,10 @@ from . import config as cfg
 
 try:
     import pytesseract
+    import os
+    tess_path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    if os.path.exists(tess_path):
+        pytesseract.pytesseract.tesseract_cmd = tess_path
     _OCR_DISPONIBLE = True
 except ImportError:
     _OCR_DISPONIBLE = False
